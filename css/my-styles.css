@@ -1,0 +1,362 @@
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif, helvetica;
+  line-height: 1.5; 
+  color: #3c5063;
+}
+/**********************
+Navbar
+***********************/
+.navbar {
+	border-radius: 0px;
+	height: 70px;
+	background-color: #ffffff;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+}
+.navbar-brand img {
+	max-width: 150px;
+	height: 100px;
+	margin-top: -27px;
+}
+/**********************
+Jumbotron
+***********************/
+.jumbotron {
+	height: 500px;
+	background-color: #830004;
+	padding: 0;
+}
+.jumbotron {
+    background: linear-gradient(rgba(0,0,0, 0.18), rgba(0,0,0, 0)), url(../images/heroFurniture.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-bottom: 0;
+}
+
+.jumbotron header {
+	margin-top: 150px;
+	text-align: center;
+}
+.jumbotron h1 {
+	color: #fff;
+	font-size: 4em;
+	font-family: 'Open Sans','Roboto', sans-serif, helvetica;
+	font-weight: 400;
+}
+.jumbotron p {
+	display: inline-block;
+	margin: auto;
+	background-color: rgba(127,20,28,0.8);
+	font-size: 1.35em;
+	color: #ffffff;
+	padding: 8px;
+	border-radius: 2px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.jumbotron header p.header-phone  {
+	display: block;
+	width: 20%;
+	margin: auto;
+	background-color: rgba(127,20,28,1);
+	margin-top: 50px;
+	font-size: 1.7em;
+	font-weight: 400;
+	f
+}
+.more-arrow {
+	text-align: center;
+}
+.more-arrow .fa {
+	color: #ffffff;
+	font-size: 4em;
+	position: relative;
+	top: 180px; 
+}
+p, ul {
+	font-family: 'Open Sans','Roboto', sans-serif, helvetica;
+}
+/**********************
+Shared
+***********************/
+.services, .about, .contacts, .test {
+	padding-bottom: 80px;
+}
+.headline-border-bottom hr {
+	border-color: #830;
+	border-width: 2px;
+	max-width: 5%;
+	margin-top: 1px;
+}
+/**********************
+Typography
+***********************/
+.section-headline {
+	font-size: 1.2em;
+	text-align: center;
+	padding: 20px
+}
+.verticalLine {
+	border-right: 1px solid #d7d3d5;
+    height: 350px;
+    position: absolute;
+    top: -14.40185404562%;
+    left: 0px;
+    bottom: 0;
+}
+/**********************
+Services
+***********************/
+.services {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.services-image .fa {
+	font-size: 4em;
+	color: #830;
+}
+.services .section-headline h2 {	
+	padding-bottom: 50px;
+}
+.services h3 {
+	font-size: 1.3125em;
+	margin: 30px 0;
+}
+.services-text-body p {
+	font-size:1.125;
+}
+.services-card {
+    min-height: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 43px 30px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	position: relative;
+}
+.services-border-bottom hr {
+	border-color: #830;
+	border-width: 2px;
+	margin-top: 40px;
+	max-width: 30%;
+}
+/**********************
+About
+***********************/
+.about {
+	background-color: #f9fbfb;
+}
+.about p {
+	max-width: 90%;
+	margin: auto;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 400;
+}
+/**********************
+ Mission, Vision & Core Values
+***********************/
+/* .mv {
+	margin-top: 80px;
+}
+.mv header h2, .mv .mv-text p {
+	text-align: center;
+}
+.mv .mission {
+	text-align: center;
+	margin-top: 70px;
+}
+.mv .col-sm-6:nth-child(1) {
+	box-shadow: -1px 1px 5px rgba(0,0,0,0.25);
+	min-height: 500px;
+	padding: 20px 10px;
+	background-color: #830004;
+	color: #fff;
+	z-index:1;
+	position: relative;
+	border-radius: 2px;
+}
+.mv .col-sm-6:nth-child(2) {
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+	min-height: 500px;
+	padding: 20px 10px;
+	background-color: #fff;
+	color: #3a4a4d;
+	z-index: 1;
+	position: relative;
+	border-radius: 2px;
+}
+.core-values-text ul li{
+  padding: 10px 0;
+	font-size: 1.125em;
+	list-style-type: ;
+	border-bottom: 1px dashed #d7d3d5;
+	z-index: 1000;
+	padding: 15px 0; 
+} */
+/**********************
+Contacts
+***********************/
+.contacts {
+	background-color: #f9fbfb;;
+	z-index: 0;
+}
+.contacts header h3 {
+	font-weight: 400;
+}
+.contacts p {
+	font-weight: 300;
+}
+.contacts-card ul {
+	list-style-type: none;
+	padding: 0;
+}
+.contacts-card {
+	border-left: 3px solid rgba(127,20,28,1);
+	min-height: 200px;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+	 z-index: 1000;
+	 box-shadow: 0 0 1px rgba(0,0,0,0.4);
+	 border-radius: 1px;
+}
+/**********************
+Services-Test
+***********************/
+
+.property-sales-image, .property-letting-image {
+	width: 50%;
+	height: 450px;
+	background: url(../images/office1.jpeg);
+	background-position: 35% 100%;
+	height: 450px;
+	background-size: cover;
+	float: left;
+	clear: left;
+}
+.property-letting-image {
+	background: url(../images/sales.jpeg);
+	background-size: cover;
+	background-position: 75% 100%;
+}
+.property-management-image {
+	width: 50%;
+	height: 450px;
+	background: url(../images/joy.jpg);
+	background-size: cover;
+	background-position: 65% 100%;
+	float: left;
+	clear: left;
+}
+.test .row:nth-child(2) {
+	margin-top: 20px;
+}
+.property-sales-text {
+	background-color: #951721;
+	color: #ffffff;
+	min-height: 450px;
+	width: 50%;
+	float: left;
+	padding: 10px
+}
+.property-sales-text p {
+	font-size: 1.1em;
+	line-height: 1.8;
+	margin-top: 20px;
+}
+/**********************
+Media Queries
+***********************/
+@media only screen and (max-width: 992px) {
+    .services-column1, .contacts-card {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+	.jumbotron {
+		background-position: 70% 100%;
+	}
+	.about p {
+		max-width: 100%;
+		font-size: 1.1em;
+	}
+	.jumbotron h1 {
+		font-size: 3.4em;
+	}
+	.jumbotron p {
+		font-size: 1.18em;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.jumbotron p {
+		max-width: 95%;
+	}
+}
+@media only screen and (max-width: 333px) {
+	.jumbotron h1 {
+		font-size: 3em;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.property-sales-image, .property-letting-image {
+	width: 100%;
+	height: 300px;
+	background-position: 35% 100%;
+	background-size: cover;
+}
+.property-management-image {
+	width: 100%;
+	height: 300px;
+	background: url(../images/joy.jpg);
+	background-size: cover;
+	background-position: 65% 100%;
+
+}
+.property-sales-text {
+	background-color: #951721;
+	color: #ffffff;
+	min-height: 300px;
+	width: 100%;
+	float: left;
+	padding: 10px
+}
+.property-sales-text p {
+	font-size: 1.1em;
+	line-height: 1.8;
+	margin-top: 20px;
+}
+}
+/**********************
+Jumbotron Phone Number
+***********************/
+@media only screen and (max-width: 1160px) {
+    .jumbotron header p.header-phone  {
+        width: 30%
+    }
+}
+@media only screen and (max-width: 774px) {
+	 .jumbotron header p.header-phone  {
+        width: 40%;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 580px) {
+	 .jumbotron header p.header-phone  {
+        width: 54%
+    }
+    .jumbotron {
+		background-position: 50% 100%;
+	}
+}
+@media only screen and (max-width: 387px) {
+	 .jumbotron header p.header-phone  {
+        width: 75%
+    }
+}
+/*************************
+Jumbotron Phone Number End
+**************************/
+
+
+
+
+
