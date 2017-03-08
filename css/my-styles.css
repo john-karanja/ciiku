@@ -46,11 +46,19 @@ Sections
 .item-img {
 	background-color: #eaf1f1;
 	margin-bottom: 13px;
+	transition-property: all 0.2s ease-in-out;
+	transition-delay: 0.1s;
 }
 .item-img img {
 	max-width: 100%;
 	padding: 20px;
+	display: block;
 }
+
+a.item-img-hover .item-img:hover {
+	border: 2px solid #f98e4a;
+}
+
 /*******************
 Typography
 ********************/
@@ -65,8 +73,63 @@ h2.section-headline {
 	font-weight: 800;
 	font-size: 1.1em;
 }
+.item-details a {
+	color: #3a4a4d;
+	transition-property: color 0.2s ease-in-out;
+}
+.modal-body .item-title h1, .modal-body .item-price p {
+	font-weight: 800;
+}
+.modal-body .item-title h1 {
+	font-size: 1.5em;
+}
+.modal-body .item-price p {
+	font-size: 1.5em;
+}
 
+.modal-body .item-contacts p.item-contacts-no {
+	 font-family: 'Open Sans', sans-serif;
+	background-color: #f98e4a;
+	display: inline-block;
+	color: #fff;
+	padding: 8px;
+	font-weight: 800;
+	font-size: 1em;
+}
+.modal-body .details p.item-details-desc   {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+.modal-body .item-contacts p.item-contacts-tile, .modal-body .details .item-details-tile  {
+	font-size: 1.5em;
+	font-weight: 800;
+}
+/*******************
+Modals
+********************/
+.modal-dialog {
+	width: 1000px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.modal-content {
+	border-radius: 0;
+}
+.modal-body img {
+	max-width: 100%;
+	padding: 20px;
+}
+.modal-body {
+	padding: 0;
+}
 
+.modal-body .col-sm-4 {
+	background-color: #eaf1f1;
+	margin: 0;
+}
+.modal-header, .modal-footer {
+	border: none;
+}
 
 
 
