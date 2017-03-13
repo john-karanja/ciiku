@@ -116,12 +116,29 @@ h2.section-headline {
 .contacts-box ul li{
 	font-size: 1.2em;
 	font-family: 'Open Sans', sans-serif, helvetica;
-	margin-bottom: 7px;
+	margin-bottom: 30px;
+}
+.contacts-box h3 {
+	font-family: 'Open Sans', sans-serif, helvetica;
 }
 .contacts-box .fa {
-	padding-right: 7px;
-	color: #f98e4a;
+	margin-right: 7px;
+	border-radius: 45px;
+	padding: 9px 10px;
+	box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.2);
+	background-color: #f98e4a;
+	color: #fff;
+	transition: transform .3s;
 }
+ul.sm-icons li {
+	display: inline-block;
+	font-size: 1.8em;
+	margin-right: 20px;
+}
+.contacts-box li a:hover .fa {
+	transform: translate(0px,-10px);
+}
+
 /*******************
 Cards
 ********************/
@@ -129,26 +146,41 @@ Cards
 	max-width: 68.3760683761%;
 	margin: 0 auto;
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
-	border-radius: 1px
+	border-radius: 1px;
 }
 .contacts-box {
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
 	padding: 20px;
 }
 /*******************
-Fforms
+Forms
 ********************/
 .contacts-box form input,.contacts-box form textarea {
 	border-radius: 2px;
 }
+.contacts-box form input:focus, .contacts-box form textarea:focus {
+	border: 2px solid #f9834a;
+	box-shadow: none;
+}
 .contacts-box button {
 	font-family: 'open Sans', sans-serif, helvetica;
 	font-weight: 600;
-	background-color: #f9834a;
+	background-color: #f98e4a;
 	color: #fff;
 	border: none;
-	padding: 10px 20px;
+	padding: 13px 25px;
 	border-radius: 2px;
+	transition-property: background-color, box-shadow;
+	transition-duration: 0.3s;
+}
+.contacts-box button:hover {
+	background-color: #f76f19;
+	color: #fff;
+	box-shadow: 7px 7px 3px rgba(0,0,0,0.3);
+}
+
+.contacts .col-sm-8 {
+	border-right: 1px solid rgba(0,0,0,0.16);
 }
 /*******************
 Modals
