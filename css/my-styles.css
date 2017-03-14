@@ -2,6 +2,7 @@ body {
 	font-family: 'Dosis', 'Open Sans', sans-serif, helvetica;
 	line-height: 1.5;
 	color: #3a4a4d;
+	background-color: #fdfdfd;
 	
 }
 /*******************
@@ -44,19 +45,24 @@ Sections
 	margin-top: 70px;
 }
 .item-img {
-	background-color: #eaf1f1;
-	margin-bottom: 13px;
-	transition-property: all 0.2s ease-in-out;
-	transition-delay: 0.1s;
+	background-color: #fff;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	margin-bottom: 3px;
+	padding: 20px 10px;
+
 }
 .item-img img {
 	max-width: 100%;
-	padding: 20px;
+	max-height: 300px;
+	margin: 0 auto;
 	display: block;
+	transition-property: box-shadow;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
 }
 
 a.item-img-hover .item-img:hover {
-	border: 2px solid #f98e4a;
+	box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
 }
 
 /*******************
@@ -75,7 +81,10 @@ h2.section-headline {
 }
 .item-details a {
 	color: #3a4a4d;
-	transition-property: color 0.2s ease-in-out;
+	transition-property: color 0.1s ease-in;
+}
+.item-details a:hover {
+	color: #f98e4a;
 }
 .modal-body .item-title h1, .modal-body .item-price p {
 	font-weight: 800;
@@ -147,11 +156,13 @@ Cards
 	margin: 0 auto;
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
 	border-radius: 1px;
+	background-color: #fff;
 }
 .contacts-box {
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
 	padding: 20px;
 	margin-bottom: 25px;
+	background-color: #fff;
 }
 /*******************
 Forms
