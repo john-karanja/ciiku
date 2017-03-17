@@ -12,20 +12,29 @@ Navbar
 	border-radius: 0;
 	background-color: #fff;
 	border-color: #fff;
-	height: 70px;
+	height: 90px;
 	margin-bottom: 0;
 }
 .navbar-brand img {
-	/*max-width: 200px;
-	height: 100px;*/
-}
-.navbar-brand h2 {
-	margin-top: 4px;
+	max-width: 100%;
+	height: 70px;
 }
 .navbar-right li a{
-	margin-top: 12px;
+	margin-top: 25px;
 	font-size: 1.2em;
 	font-weight: 700;
+	margin-left: 12px;
+	padding-bottom: 0;
+}
+.navbar-default .navbar-nav > .active > a {
+	background: none;
+	color: #3a4a4d;
+	border-bottom: 2px solid #f98e4a;
+	padding-bottom: 0;
+}
+.navbar-right li a:hover {
+	border-bottom: 2px solid #f98e4a;
+	background: none;
 }
 /*******************
 Jumbotron
@@ -42,7 +51,6 @@ Jumbotron
 Sections 
 ********************/ 
 .eyes,.face {
-	margin-top: 70px;
 }
 .item-img {
 	background-color: #fff;
@@ -70,9 +78,12 @@ Typography
 ********************/
 h2.section-headline {
 	text-align: center;
-	margin: 30px 0;
+	margin-bottom: 30px;
 /* 	border-bottom: 2px solid #f98e4a; */
 	font-weight: 400;
+}
+.item-details {
+	margin-bottom: 40px
 }
 .item-details p {
 	color: ;
@@ -147,16 +158,24 @@ ul.sm-icons li {
 .contacts-box li a:hover .fa {
 	transform: translate(0px,-10px);
 }
-
+.about-card p, .about-card li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+}
+.about-card ul {
+	list-style: none;
+}
 /*******************
 Cards
 ********************/
 .about-card {
-	max-width: 68.3760683761%;
+	max-width: 88.3760683761%;
 	margin: 0 auto;
-	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
 	border-radius: 1px;
 	background-color: #fff;
+	text-align: center;
+	padding: 10px;
 }
 .contacts-box {
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
@@ -190,9 +209,27 @@ Forms
 	color: #fff;
 	box-shadow: 7px 7px 3px rgba(0,0,0,0.3);
 }
-
 .contacts .col-sm-8 {
 	border-right: 1px solid rgba(0,0,0,0.16);
+}
+/********************
+Footer
+********************/
+.footer {
+	background-color: #f98e4a;
+	text-align: center;
+}
+.footer ul li {
+	display: inline-block;
+	padding: 10px 5px;
+	font-size: 1.2em;
+}
+.footer a {
+	color: #3a4a4d;
+	font-weight: 700;
+}
+.footer a:hover {
+	color: #fff;
 }
 /*******************
 Modals
@@ -220,17 +257,94 @@ Modals
 .modal-header, .modal-footer {
 	border: none;
 }
+/*******************
+Media Queries
+********************/
+/**
+  * Custom Bootstrap 3 grid for 480-767px layout
+  * Author: Iftakhar Hasan
+  *
+  * A new set of column classes (with class prefix .col-ms- ) for Bootstrap 3
+  * to make Medium Small grids for supporting 480-767px
+  *
+  * This will push the default Bootstrap 3 Extra Small column (class prefix .col-xs- )
+  * to support 1-479px instead of 1-767px
+  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.col-ms-1,
+.col-ms-2,
+.col-ms-3,
+.col-ms-4,
+.col-ms-5,
+.col-ms-6,
+.col-ms-7,
+.col-ms-8,
+.col-ms-9,
+.col-ms-10,
+.col-ms-11,
+.col-ms-12 {position:relative; padding-left:15px; padding-right:15px;} 
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {max-width:748px;} 
+  .col-ms-1,
+  .col-ms-2,
+  .col-ms-3,
+  .col-ms-4,
+  .col-ms-5,
+  .col-ms-6,
+  .col-ms-7,
+  .col-ms-8,
+  .col-ms-9,
+  .col-ms-10,
+  .col-ms-11 {float:left;}
+  .col-ms-1 {width:8.33333333%;}
+  .col-ms-2 {width:16.66666667%;}
+  .col-ms-3 {width:25%;}
+  .col-ms-4 {width:33.33333333%;}
+  .col-ms-5 {width:41.66666667%;}
+  .col-ms-6 {width:50%;}
+  .col-ms-7 {width:58.33333333%;}
+  .col-ms-8 {width:66.66666667%;}
+  .col-ms-9 {width:75%;}
+  .col-ms-10 {width:83.33333333%;}
+  .col-ms-11 {width:91.66666667%;}
+  .col-ms-12 {width:100%;}
+  .col-ms-pull-0 {right:auto;}
+  .col-ms-pull-1 {right:8.33333333%;}
+  .col-ms-pull-2 {right:16.66666667%;}
+  .col-sm-pull-3 {right:25%;}
+  .col-sm-pull-4 {right:33.33333333%;}
+  .col-sm-pull-5 {right:41.66666667%;}
+  .col-sm-pull-6 {right:50%;}
+  .col-sm-pull-7 {right:58.33333333%;}
+  .col-ms-pull-8 {right:66.66666667%;}
+  .col-ms-pull-9 {right:75%;}
+  .col-ms-pull-10 {right:83.33333333%;}
+  .col-ms-pull-11 {right:91.66666667%;}
+  .col-ms-pull-12 {right:100%;}
+  .col-ms-push-0 {left:auto;}
+  .col-ms-push-1 {left:8.33333333%;}
+  .col-ms-push-2 {left:16.66666667%;}
+  .col-sm-push-3 {left:25%;}
+  .col-sm-push-4 {left:33.33333333%;}
+  .col-sm-push-5 {left:41.66666667%;}
+  .col-sm-push-6 {left:50%;}
+  .col-sm-push-7 {left:58.33333333%;}
+  .col-ms-push-8 {left:66.66666667%;}
+  .col-ms-push-9 {left:75%;}
+  .col-ms-push-10 {left:83.33333333%;}
+  .col-ms-push-11 {left:91.66666667%;}
+  .col-ms-push-12 {left:100%;}
+  .col-ms-offset-0 {margin-left:0;}
+  .col-ms-offset-1 {margin-left:8.33333333%;}
+  .col-ms-offset-2 {margin-left:16.66666667%;}
+  .col-ms-offset-3 {margin-left:25%;}
+  .col-ms-offset-4 {margin-left:33.33333333%;}
+  .col-ms-offset-5 {margin-left:41.66666667%;}
+  .col-ms-offset-6 {margin-left:50%;}
+  .col-ms-offset-7 {margin-left:58.33333333%;}
+  .col-ms-offset-8 {margin-left:66.66666667%;}
+  .col-ms-offset-9 {margin-left:75%;}
+  .col-ms-offset-10 {margin-left:83.33333333%;}
+  .col-ms-offset-11 {margin-left:91.66666667%;}
+  .col-ms-offset-12 {margin-left:100%;}
+}
